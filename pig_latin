@@ -1,10 +1,9 @@
 word=input("enter a word ")
 
-if word[0] in 'aeiou':
+if word[0] in 'aeiou' or word[0].isupper() and word[1:].islower() or word[0] in 'aeiou':
   new_word=word+"way"
   print(new_word)
 
 else:
   new_word=word[1:]+word[0]+"way"
   print(new_word)
-  
