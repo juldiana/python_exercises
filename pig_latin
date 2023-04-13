@@ -1,0 +1,10 @@
+word=input("enter a word ")
+
+if word[0] in 'aeiou':
+  new_word=word+"way"
+  print(new_word)
+
+else:
+  new_word=word[1:]+word[0]+"way"
+  print(new_word)
+  
